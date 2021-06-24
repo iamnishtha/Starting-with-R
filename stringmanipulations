@@ -1,0 +1,42 @@
+# R program for String concatenation
+
+# Concatenation using paste() function
+str <- paste("Learn", "Code")
+print (str)
+
+str <- paste(c(1:3), "4", sep = ":")
+print (str)
+
+str <- paste(c(1:4), c(5:8), sep = "--")
+print (str)
+
+# R program for string concatenation
+
+# Concatenation using cat() function
+str <- cat("learn", "code", "tech", sep = ":")
+print (str)
+
+cat(c(1:5), file ='sample.txt')
+
+# R program to calculate length
+
+print (length(c("Learn to", "Code")))
+
+print (nchar(c("Learn", "Code")))
+
+print (toupper(c("Learn Code", "hI")))
+
+print (tolower(c("Learn Code", "hI")))
+print (casefold(c("Learn Code", "hI")))
+
+print (casefold(c("Learn Code", "hI"), upper = TRUE))
+chartr("a", "A", "An honest man gave that")
+chartr("is", "#@", c("This is it", "It is great"))
+chartr("ate", "#@", "I hate ate")
+strsplit("Learn Code Teach !", " ")
+str <- c("program", "with", "new", "language")
+substring(str, 3, 3) <- "%"
+print(str)
+str <- c("program", "with", "new", "language")
+substr(str, 3, 3) <- c("%", "@")
+print(str)
